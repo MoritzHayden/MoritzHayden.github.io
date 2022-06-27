@@ -15,8 +15,10 @@ jobs:
         node-version: [16.x]
 
     steps:
-    - name: Checkout
+    - name: Checkout main
       uses: actions/checkout@v3
+      with:
+        ref: main
 
     - name: Install Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
@@ -40,3 +42,21 @@ jobs:
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
+
+    - name: Checkout gh-pages
+      uses: actions/checkout@v3
+      with:
+        ref: gh-pages
+
+    - name: Create CNAME
+      run: touch CNAME
+
+    - name: Populate CNAME
+      run: printf "www.haydenmoritz.com\n" >> CNAME
+
+    - name: Commit CNAME
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          branch: gh-pages
+          commit_message: Add CNAME
+          file_pattern: CNAME
