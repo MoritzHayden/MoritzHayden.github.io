@@ -55,8 +55,8 @@ jobs:
       run: printf "www.haydenmoritz.com\n" >> CNAME
 
     - name: Commit CNAME
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          branch: gh-pages
-          commit_message: Add CNAME
-          file_pattern: CNAME
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        branch: gh-pages
+        commit_message: Add CNAME
+        file_pattern: CNAME
