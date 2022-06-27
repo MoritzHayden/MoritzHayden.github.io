@@ -52,7 +52,7 @@ jobs:
       run: touch CNAME
 
     - name: Populate CNAME
-      run: printf "www.haydenmoritz.com\n" >> CNAME
+      run: printf "haydenmoritz.com\n" >> CNAME
 
     - name: Commit CNAME
       uses: stefanzweifel/git-auto-commit-action@v4
