@@ -19,4 +19,5 @@ jobs:
       - run: npm run build
       - run: git config --global user.email "Moritz.Hayden@gmail.com"
       - run: git config --global user.name "MoritzHayden"
+      - run: git remote add origin git@github.com:MoritzHayden/MoritzHayden.github.io.git
       - run: npm run deploy
