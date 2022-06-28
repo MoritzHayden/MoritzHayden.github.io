@@ -1,10 +1,5 @@
-# MoritzHayden.github.io
+# Hayden Moritz - LittleLink
 
-![CI/CD](https://github.com/MoritzHayden/MoritzHayden.github.io/workflows/CI/CD/badge.svg)
+This project contains the source code for my personal website: [haydenmoritz.com](https://haydenmoritz.com/). It was bootstrapped with [LittleLink](https://github.com/sethcottle/littlelink) and is being hosted by [GitHub Pages](https://pages.github.com/)
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and is currently under development.
-
-## About
-
-This is my personal website built in React and hosted by GitHub pages. Check it out [here](https://www.haydenmoritz.com/)!
+> **NOTE:** This project is currently under development.
