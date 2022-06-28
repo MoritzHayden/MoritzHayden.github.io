@@ -316,6 +316,18 @@ button:hover,
   filter: brightness(90%);
 }
 
+/* LiveTerm */
+.button.button-liveterm {
+  color: #ffffff;
+  background: #237ce3;
+  background: -webkit-linear-gradient(to right, #237ce3, #e31113);
+  background: linear-gradient(to right, #237ce3, #e31113);
+}
+.button.button-liveterm:hover,
+.button.button-liveterm:focus {
+  filter: brightness(90%);
+}
+
 /* Mastodon */
 .button.button-mastodon {
   color: #ffffff;
