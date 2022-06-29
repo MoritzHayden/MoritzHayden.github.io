@@ -49,12 +49,16 @@
 
     <link rel="stylesheet" href="css/brands.css" />
 
+    <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="js/utils.js"></script>
+
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/avatar.png" />
   </head>
 
-  <body>
+  <body onload="footer()">
     <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
@@ -261,7 +265,7 @@
           <br />
 
           <!-- Footer -->
-          <p>Copyright &copy; <script>document.write(/\d{4}/.exec(Date())[0])</script> Hayden Moritz</p>
+          <div id="footer_div"></div>
         </div>
       </div>
     </div>
