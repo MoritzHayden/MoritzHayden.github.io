@@ -19,6 +19,6 @@
   ExpiresByType video/webm "access plus 1 hour"
 
 # CSS and JavaScript
-  ExpiresByType application/javascript "access plus 1 day"
-  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 hour"
 </IfModule>
