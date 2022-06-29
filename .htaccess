@@ -13,11 +13,12 @@
   ExpiresByType image/gif "access plus 1 hour"
   ExpiresByType image/jpeg "access plus 1 hour"
   ExpiresByType image/png "access plus 1 hour"
+  ExpiresByType image/svg "access plus 1 hour"
   ExpiresByType video/mp4 "access plus 1 hour"
   ExpiresByType video/ogg "access plus 1 hour"
   ExpiresByType video/webm "access plus 1 hour"
 
 # CSS and JavaScript
-  ExpiresByType application/javascript "access plus 1 hour"
-  ExpiresByType text/css "access plus 1 hour"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType text/css "access plus 1 day"
 </IfModule>
