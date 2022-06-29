@@ -22,3 +22,26 @@
   ExpiresByType application/javascript "access plus 1 hour"
   ExpiresByType text/css "access plus 1 hour"
 </IfModule>
+
+# ----------------------------------------------------------------------
+# Canonicalization
+# ----------------------------------------------------------------------
+
+# Comprehensive URL Canonicalization for WordPress
+RedirectMatch permanent index.html/(.*) https://haydenmoritz.com/$1
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.haydenmoritz\.com$ [NC]
+RewriteRule ^(.*)$ https://haydenmoritz.com%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.(html)\ HTTP/
+RewriteRule ^(([^/]+/)*)index\.(html)$ https://haydenmoritz.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
