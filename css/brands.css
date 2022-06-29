@@ -61,6 +61,14 @@ button:hover,
   filter: brightness(90%);
 }
 
+@media print {
+  .button {
+    color: #ffffff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
 /* Brand Icons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
