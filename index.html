@@ -79,7 +79,7 @@
          Light:  css/skeleton-light.css
          Dark:   css/skeleton-dark.css
   -->
-    <link rel="stylesheet" href="css/skeleton-dark.css" />
+    <link id="theme" rel="stylesheet" href="css/skeleton-dark.css" />
 
     <link rel="stylesheet" href="css/brands.css" />
 
@@ -115,7 +115,13 @@
 
           <!-- Theme Toggle -->
           <div class="toggleWrapper">
-            <input type="checkbox" class="dn" id="dn" />
+            <input
+              type="checkbox"
+              checked="true"
+              onclick="toggleTheme()"
+              class="dn"
+              id="dn"
+            />
             <label for="dn" class="toggle">
               <span class="toggle__handler">
                 <span class="crater crater--1"></span>
