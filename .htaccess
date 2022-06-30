@@ -1,25 +1,18 @@
 # ----------------------------------------------------------------------
-# Expires headers (for better cache control)
+# Cache Policy
 # ----------------------------------------------------------------------
 
-<IfModule mod_expires.c>
-  ExpiresActive on
+# HTML (10 minutes)
+<FilesMatch "\.(html)$">
+  Header set Cache-Control "max-age=600, public"
+</FilesMatch>
 
-# HTML
-  ExpiresByType text/html "access plus 0 seconds"
+# Media (7 days)
+<FilesMatch "\.(jpg|jpeg|gif|png|svg|webp)$">
+  Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
 
-# Media: images, video, audio
-  ExpiresByType audio/ogg "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/svg "access plus 1 year"
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType video/mp4 "access plus 1 year"
-  ExpiresByType video/ogg "access plus 1 year"
-  ExpiresByType video/webm "access plus 1 year"
-
-# CSS and JavaScript
-  ExpiresByType application/javascript "access plus 1 hour"
-  ExpiresByType text/css "access plus 1 hour"
-</IfModule>
+# CSS & JS (30 days)
+# <FilesMatch "\.(css|js)$">
+#   Header set Cache-Control "max-age=2592000, public"
+# </FilesMatch>
