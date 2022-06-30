@@ -9,39 +9,17 @@
   ExpiresByType text/html "access plus 0 seconds"
 
 # Media: images, video, audio
-  ExpiresByType audio/ogg "access plus 1 day"
-  ExpiresByType image/gif "access plus 1 day"
-  ExpiresByType image/jpeg "access plus 1 day"
-  ExpiresByType image/png "access plus 1 day"
-  ExpiresByType image/svg "access plus 1 day"
-  ExpiresByType video/mp4 "access plus 1 day"
-  ExpiresByType video/ogg "access plus 1 day"
-  ExpiresByType video/webm "access plus 1 day"
+  ExpiresByType audio/ogg "access plus 1 month"
+  ExpiresByType image/gif "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType video/mp4 "access plus 1 month"
+  ExpiresByType video/ogg "access plus 1 month"
+  ExpiresByType video/webm "access plus 1 month"
 
 # CSS and JavaScript
   ExpiresByType application/javascript "access plus 1 hour"
   ExpiresByType text/css "access plus 1 hour"
-</IfModule>
-
-# ----------------------------------------------------------------------
-# Canonicalization
-# ----------------------------------------------------------------------
-
-# Comprehensive URL Canonicalization for WordPress
-RedirectMatch permanent index.html/(.*) https://haydenmoritz.com/$1
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.haydenmoritz\.com$ [NC]
-RewriteRule ^(.*)$ https://haydenmoritz.com%{REQUEST_URI} [R=301,L]
-
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.(html)\ HTTP/
-RewriteRule ^(([^/]+/)*)index\.(html)$ https://haydenmoritz.com/$1 [R=301,L]
-
-RewriteCond %{REQUEST_URI} /+[^\.]+$
-RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
 </IfModule>
