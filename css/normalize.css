@@ -223,6 +223,13 @@ pre {
 }
 
 /**
+ * Space the bio elements.
+ */
+p span {
+  display: inline-block;
+}
+
+/**
  * Address odd `em`-unit font size rendering in all browsers.
  */
 
