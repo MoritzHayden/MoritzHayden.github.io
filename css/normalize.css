@@ -227,6 +227,7 @@ pre {
  */
 p span {
   display: inline-block;
+  white-space: pre;
 }
 
 /**
