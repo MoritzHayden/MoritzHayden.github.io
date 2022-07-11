@@ -8,7 +8,7 @@ function render() {
 function bio() {
   var width = window.innerWidth;
   var bio =
-    "<p><span>👨‍💻 Software Engineering |</span><span>🔐 Cybersecurity |</span><span>🔨 Hackathons</span></p>";
+    "<p><span>👨‍💻 Software Engineering | </span><span>🔐 Cybersecurity | </span><span>🔨 Hackathons</span></p>";
 
   if (width < 650) {
     bio =
