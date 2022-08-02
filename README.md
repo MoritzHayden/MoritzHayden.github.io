@@ -5,6 +5,7 @@
   [![pages-build-deployment](https://github.com/MoritzHayden/MoritzHayden.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/MoritzHayden/MoritzHayden.github.io/actions/workflows/pages/pages-build-deployment)
   [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fhaydenmoritz.com)](https://haydenmoritz.com)
   [![Code Size](https://img.shields.io/github/languages/code-size/MoritzHayden/MoritzHayden.github.io)](https://github.com/MoritzHayden/MoritzHayden.github.io)
+  [![GitHub Stars](https://img.shields.io/github/stars/MoritzHayden/MoritzHayden.github.io)](https://github.com/MoritzHayden/MoritzHayden.github.io)
 
 </div>
 
