@@ -30,8 +30,8 @@ function contact() {
     document.getElementById("email_btn").innerHTML = "<img class=\"icon\" src=\"images/icons/email.svg\" alt=\"Email Icon\"/>Email Me";
     document.getElementById("call_btn").innerHTML = "<img class=\"icon\" src=\"images/icons/phone.svg\" alt=\"Phone Icon\"/>Call Me";
   } else {
-    document.getElementById("email_btn").innerHTML = "<img class=\"icon\" src=\"images/icons/email.svg\" alt=\"Email Icon\"/>me@haydenmoritz.com";
-    document.getElementById("call_btn").innerHTML = "<img class=\"icon\" src=\"images/icons/phone.svg\" alt=\"Phone Icon\"/>(615) 455-1656";
+    document.getElementById("email_btn").innerHTML = "<img class=\"icon\" src=\"images/icons/email.svg\" alt=\"Email Icon\"/>Email Me";
+    document.getElementById("call_btn").innerHTML = "<img class=\"icon\" src=\"images/icons/phone.svg\" alt=\"Phone Icon\"/>Call Me";
   }
 }
 
