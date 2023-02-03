@@ -21,9 +21,7 @@ function bio() {
 
 function footer() {
   document.getElementById("footer_div").innerHTML =
-    "<p>Copyright &copy; " +
-    /\d{4}/.exec(Date())[0] +
-    ' Hayden Moritz<br/ ><a href="https://test.hmoritz.dev/">Redesign Sneak Peek</a></p>';
+    "<p>Copyright &copy; " + /\d{4}/.exec(Date())[0] + " Hayden Moritz</p>";
 }
 
 function contact() {
