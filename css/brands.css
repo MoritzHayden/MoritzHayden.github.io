@@ -478,11 +478,21 @@ button:hover,
 
 /* Spotify */
 .button.button-spotify {
-  color: #ffffff;
-  background-color: #000000;
+  color: #191414;
+  background-color: #1db954;
 }
 .button.button-spotify:hover,
 .button.button-spotify:focus {
+  filter: brightness(90%);
+}
+
+/* Spotify Alt */
+.button.button-spotify-alt {
+  color: #ffffff;
+  background-color: #191414;
+}
+.button.button-spotify-alt:hover,
+.button.button-spotify-alt:focus {
   filter: brightness(90%);
 }
 
